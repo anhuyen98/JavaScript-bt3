@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="innerLession">
+        <!-- Input User -->
+        <div class="form-group container py-5">
+            <h2 class="badge badge-warning" style="font-size: 2rem;">Bài tập JavaScript</h2>
+            <div class="form-group">
+                <label for="inputNum" class="col-form-label">Nhập số</label>
+                <input class="form-control" type="number" name="" id="inputNum" placeholder="Nhập số n">
+            </div>
+            <button id="btnAddNum" class="btn btn-info">Thêm số</button>
+            <div class="alert alert-info mt-3">
+                <i class="fa fa-arrow-right p-2" style="color: black;"></i> <span id="resultArray"></span>
+            </div>
+        </div>
+
+        <!-- Calculate coder -->
+        <div class="pb-5">
+            <div class="container accordion-form">
+                <div class="form-group">
+                    <div class="accordion-content form1">
+                        <header>
+                            <span class="title">1. Tổng số dương</span>
+                            <i class="icon fa-solid fa-plus"></i>
+                        </header>
+                        <hr>
+                        <div class="accordion-des form-group d-flex">
+                            <button id="btnSum" class="btn btn-info mr-2">Tính tổng</button>
+                            <div class="row alert alert-warning mb-0 w-50">
+                                Tổng số dương <i class="fa fa-arrow-right p-2" style="color: rgb(0, 0, 0);"></i> <span
+                                    id="resultSum"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="accordion-content form2">
+                        <header>
+                            <span class="title">2. Đếm số dương</span>
+                            <i class="icon fa-solid fa-plus"></i>
+                        </header>
+                        <hr>
+                        <div class="accordion-des form-group d-flex">
+                            <button id="btnAmountPositive" class="btn btn-info mr-2">Đếm số</button>
+                            <div class="row alert alert-warning mb-0 w-50">
+                                Số dương <i class="fa fa-arrow-right p-2" style="color: rgb(0, 0, 0);"></i> <span
+                                    id="resultAmountPositive"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="accordion-content form3">
+                        <header>
+                            <span class="title">3. Tìm số nhỏ nhất</span>
+                            <i class="icon fa-solid fa-plus"></i>
+                        </header>
+                        <hr>
+                        <div class="accordion-des form-group d-flex">
+                            <button id="btnSmallestNum" class="btn btn-info mr-2">Tìm số nhỏ nhất</button>
+                            <div class="row alert alert-warning mb-0 w-50">
+                                Số nhỏ nhất <i class="fa fa-arrow-right p-2" style="color: rgb(0, 0, 0);"></i> <span
+                                    id="resultSmallestNum"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="accordion-content form4">
+                        <header>
+                            <span class="title">4. Tìm số dương nhỏ nhất</span>
+                            <i class="icon fa-solid fa-plus"></i>
+                        </header>
+                        <hr>
+                        <div class="accordion-des form-group d-flex">
+                            <button id="btnSmallestPositive" class="btn btn-info mr-2">Tìm số dương nhỏ nhất</button>
+                            <div class="row alert alert-warning mb-0 w-50">
+                                Số dương nhỏ nhất <i class="fa fa-arrow-right p-2" style="color: rgb(0, 0, 0);"></i>
+                                <span id="resultSmallestPositive"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="accordion-content form5">
+                        <header>
+                            <span class="title">5. Tìm số chẵn cuối cùng</span>
+                            <i class="icon fa-solid fa-plus"></i>
+                        </header>
+                        <hr>
+                        <div class="accordion-des form-group d-flex">
+                            <button id="btnLastEven" class="btn btn-info mr-2">Tìm số chẵn</button>
+                            <div class="row alert alert-warning mb-0 w-50">
+                                Số chẵn cuối cùng <i class="fa fa-arrow-right p-2" style="color: rgb(0, 0, 0);"></i>
+                                <span id="resultLastEven"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="accordion-content form6">
+                        <header>
+                            <span class="title">6. Đổi chỗ</span>
+                            <i class="icon fa-solid fa-plus"></i>
+                        </header>
+                        <hr>
+                        <div class="accordion-des form-group">
+                            <div class="form-group row justify-content-start mx-0 pt-1">
+                                <input class="col-3 form-control mr-2" type="text" name="" id="index1"
+                                    placeholder="Nhập vị trí 1">
+                                <input class="col-3 form-control" type="text" name="" id="index2"
+                                    placeholder="Nhập vị trí 2">
+                            </div>
+                            <div class="form-group d-flex">
+                                <button id="btnSwap" class="btn btn-info mr-2">Đổi chỗ</button>
+                                <div class="row alert alert-warning mt-0 w-50">
+                                    Mảng sau khi đổi chỗ <i class="fa fa-arrow-right p-2"
+                                        style="color: rgb(0, 0, 0);"></i> <span id="resultSwap"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="accordion-content form7">
+                        <header>
+                            <span class="title">7. Sắp xếp tăng dần</span>
+                            <i class="icon fa-solid fa-plus"></i>
+                        </header>
+                        <hr>
+                        <div class="accordion-des form-group d-flex">
+                            <button id="btnSort" class="btn btn-info mr-2">Sắp xếp</button>
+                            <div class="row alert alert-dark mb-0 w-50">
+                                Mảng sau khi sắp xếp <i class="fa fa-arrow-right p-2" style="color: rgb(0, 0, 0);"></i>
+                                <span id="resultSort"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="accordion-content form8">
+                        <header>
+                            <span class="title">8. Tìm số nguyên tố đầu tiên</span>
+                            <i class="icon fa-solid fa-plus"></i>
+                        </header>
+                        <hr>
+                        <div class="accordion-des form-group d-flex">
+                            <button id="btnPrimeNum" class="btn btn-info mr-2">Tìm số nguyên tố</button>
+                            <div class="row alert alert-dark mb-0 w-50">
+                                <i class="fa fa-arrow-right p-2" style="color: rgb(0, 0, 0);"></i> <span
+                                    id="resultPrimeNum"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="accordion-content form9">
+                        <header>
+                            <span class="title">9. Đếm số nguyên</span>
+                            <i class="icon fa-solid fa-plus"></i>
+                        </header>
+                        <hr>
+                        <div class="accordion-des form-group">
+                            <div class="form-group d-flex">
+                                <input class="col-5 form-control mr-2" type="number" name="" id="inputNum2"
+                                    placeholder="Nhập số">
+                                <button id="btnAddNum2" class="btn btn-primary">Thêm số</button>
+                            </div>
+                            <div class="alert alert-light my-2 w-50">
+                                <i class="fa fa-arrow-right p-2" style="color: black;"></i> <span
+                                    id="resultArray2"></span>
+                            </div>
+                            <div class="form-group d-flex py-1">
+                                <button id="btnIntegerCount" class="btn btn-info mr-2">Đếm số nguyên</button>
+                                <div class="row alert alert-dark mb-0 w-50">
+                                    <i class="fa fa-arrow-right p-2" style="color: rgb(0, 0, 0);"></i> <span
+                                        id="resultIntegerCount"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="accordion-content form10">
+                        <header>
+                            <span class="title">10. So sánh số lượng số âm và số dương</span>
+                            <i class="icon fa-solid fa-plus"></i>
+                        </header>
+                        <hr>
+                        <div class="accordion-des form-group d-flex">
+                            <button id="btnCompare" class="btn btn-info mr-2">So sánh</button>
+                            <div class="row alert alert-dark mb-0 w-50">
+                                <i class="fa fa-arrow-right" style="color: rgb(0, 0, 0);"></i> <span
+                                    id="resultCompare"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay -->
+        <span class="overlay"></span>
+
+        <!-- Popup Alert -->
+        <div class="box-modal-1">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <h2>Cảnh báo</h2>
+            <p>Vui lòng nhập số n</p>
+            <span class="hide-modal"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="box-modal-2">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <h2>Cảnh báo</h2>
+            <p>Vui lòng nhập vào để tính</p>
+            <span class="hide-modal"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
